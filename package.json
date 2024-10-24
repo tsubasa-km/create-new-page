@@ -2,7 +2,7 @@
   "name": "create-new-page",
   "displayName": "create-new-page",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "publisher": "stu-tsuba",
   "engines": {
     "vscode": "^1.93.0"
