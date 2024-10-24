@@ -27,11 +27,26 @@
           "group": "navigation@999"
         }
       ]
+    },
+    "configuration": {
+      "type":"object",
+      "title":"拡張機能の設定",
+      "properties": {
+        "create-new-page.filePaths":{
+          "type":"array",
+          "default":["css/style.css","js/script.js"],
+          "description": "作成するファイル",
+          "items":{
+            "type":"string"
+          },
+          "scope":"application"
+        }
+      }
     }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
-    "compile": "webpack",
+    "compile": "vsce package",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc -p . --outDir out",
