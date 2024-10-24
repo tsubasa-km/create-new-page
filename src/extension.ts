@@ -4,7 +4,7 @@ import * as path from 'path';
 
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand('make-html-files.create',
+  let disposable = vscode.commands.registerCommand('create-new-page.create',
     async() => {
       const pageName = await vscode.window.showInputBox({
         prompt:"Enter the page name",

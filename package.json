@@ -1,6 +1,6 @@
 {
-  "name": "make-html-files",
-  "displayName": "make-html-files",
+  "name": "create-new-page",
+  "displayName": "create-new-page",
   "description": "",
   "version": "0.0.2",
   "publisher": "stu-tsuba",
@@ -15,14 +15,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "make-html-files.create",
+        "command": "create-new-page.create",
         "title": "Create New Html Page."
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "make-html-files.create",
+          "command": "create-new-page.create",
           "when": "explorerResourceIsFolder",
           "group": "navigation@999"
         }
